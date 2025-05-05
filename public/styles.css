@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: var(--color-background);
+    color: var(--color-text-default);
+    font-family: "Work Sans", sans-serif;
+    min-height: 100vh;
+}
+
+img {
+    width: 100%;
+}
+
+header {
+    background-color: var(--color-header-background);
+    color: var(--color-header-text);
+    padding: 1rem 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+header h1 {
+    flex: 1 1 max-content;
+}
+
+header label {
+    display: flex;
+    gap: 0.25rem;
+    align-items: center;
+    justify-self: flex-end;
+}
+
+header label input {
+    border: solid 1px var(--color-accent);
+    padding: 0.124em;
+}
+
+header button {
+    font-family: inherit;
+    padding: 0.5em;
+    border: solid 1px var(--color-accent);
+    border-radius: 0.25em;
+    color: var(--color-text-default);
+    cursor: pointer;
+    background-color: var(--color-background);
+}
+
+.hidden-mobile-nav {
+    display: none;
+}
+
+nav {
+    display: flex;
+    flex: 1 0 100%;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+nav li {
+    list-style-type: none;
+    font-size: 1.25em;
+}
+
+a {
+    color: var(--color-accent);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h1,
+h2 {
+    font-family: "Arvo", serif;
+}
+
+main {
+    padding: 2rem;
+    width: 100%;
+    max-width: 70rem;
+    margin: auto;
+}
+
+
+h2 {
+    color: var(--color-accent);
+    border-bottom: 2px solid var(--color-accent);
+    margin: 0.25em 0;
+}
+
+p {
+    color: var(--color-text-default);
+    margin-bottom: 0.5em;
+}
+
+main.home-main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+main.home-main .headshot {
+    display: block;
+    flex: 1 0 100%;
+}
+
+main.home-main .headshot img {
+    max-width: 30em;
+}
+
+main.about {
+    flex: 1 0 25em;
+}
+
+main.contact {
+    flex: 1 0 fit-content;
+}
+
+main dl {
+    display: grid;
+    grid-template-columns: max-content auto;
+    gap: 1rem;
+}
+
+main dl dt {
+    font-weight: 500;
+    text-align: right;
+}
+
+main ul {
+    padding: 0 2em;
+}
+
+@media (min-width: 60rem) {
+
+    nav, .hidden-mobile-nav {
+        display: flex;
+        flex: 0 1 0;
+    }
+
+    nav ul {
+        flex-direction: row;
+    }
+
+    header button {
+        display: none;
+    }
+
+}

@@ -1,0 +1,15 @@
+:root {
+    --color-background: rgb(224, 224, 224);
+    --color-text-default: rgb(0, 63, 125);
+    --color-accent: rgb(3, 80, 49);
+    --color-header-background: rgb(188, 186, 197);
+    --color-header-text: rgb(71, 25, 95);
+}
+
+body.dark-mode {
+    --color-background: rgb(0, 63, 125);
+    --color-text-default: rgb(224, 224, 224);
+    --color-accent: rgb(114, 190, 160);
+    --color-header-background: rgb(71, 25, 95);
+    --color-header-text: rgb(210, 210, 210);
+}
